@@ -1,0 +1,202 @@
+.robot
+{
+    background-color: black;
+}
+.robot:hover
+{
+    animation-name: back_colorchange;
+    animation-duration: 60s;
+}
+@keyframes back_colorchange
+{
+    0%{background-color:rgb(13, 18, 2);}
+    25%{background-color:rgb(7, 91, 116);}
+    50%{background-color:rgb(153, 53, 9);}
+    75%{background-color:rgb(120, 15, 146);}
+    100%{background-color:rgb(12, 121, 85);}
+}
+.dancing
+{
+    position: relative;
+    top:-2.5cm;
+}
+.head
+{
+    height:150px;
+    width:200px;
+    margin: 0 auto; 
+    background-color: rgb(101, 244, 40);
+    position: relative;
+    left:-0.0cm;
+    top:3.4cm;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+} 
+#lefteye,#righteye
+{
+    height:22px;
+    width:22px;
+    background-color:rgb(12, 11, 11);
+    border-radius: 100%;
+    
+}
+#lefteye
+{
+    position:relative;
+    left:2.5em;
+    top:6em;
+}
+#righteye
+{
+    position:relative;
+    left:6.5em;
+    top:4.6em;
+}
+.dancing:hover .head {
+    animation: movehead 1.5s infinite;
+  }
+@keyframes movehead
+{
+    0%{width:200px;}
+    25%{width:300px;}
+    50%{width:200px;}
+    75%{width:300px;}
+    100%{width:200px;}
+}
+.body{
+    height:200px;
+    width:200px;
+    background-color: rgb(101, 244, 40);
+    position: relative;
+    left:42.5%;
+    top:3.7cm;
+    border-radius: 0 0 50px 50px;
+    transition: border-radius 1s;
+    
+}
+.dancing:hover .body
+{
+    border-radius: 40%;
+    animation: bodymove 2s infinite;
+}
+@keyframes bodymove 
+{
+    from
+    {
+      transform: rotate(0deg);
+    }
+  
+    to 
+    {
+      transform: rotate(360deg); 
+    }
+}
+.lefthand
+{
+    height: 3.5cm;
+    width: 1cm;
+    background-color:rgb(101, 244, 40);
+    border-radius:50px;
+    position: relative;
+    left:58.6%;
+    top:-1cm;
+}
+.dancing:hover .lefthand
+{
+    animation: leftmove 2s infinite;
+}
+@keyframes leftmove
+{
+    0%{transform: rotate(0deg);
+       transform-origin: top center;}
+    25%{transform: rotate(-90deg);
+        transform-origin: top center;}
+    50%{transform: rotate(0deg);
+        transform-origin: top center;}
+    75%{transform: rotate(-90deg);
+        transform-origin: top center;}
+    100%{transform: rotate(0deg);
+        transform-origin: top center;}
+}
+.righthand
+{
+    height: 3.5cm;
+    width: 1cm;
+    background-color:rgb(101, 244, 40);
+    border-radius:50px;
+    position: relative;
+    top:-4.3cm;
+    left:38.8%;
+}
+.dancing:hover .righthand
+{
+    animation: rightmove 2s infinite;
+}
+@keyframes rightmove
+{
+    0%{transform: rotate(0deg);
+        transform-origin: top center;}
+    25%{transform: rotate(90deg);
+        transform-origin: top center;}
+    50%{transform: rotate(0deg);
+        transform-origin: top center;}
+    75%{transform: rotate(90deg);
+        transform-origin: top center;}
+    100%{transform: rotate(0deg);
+        transform-origin: top center;}
+}
+.leftleg
+{
+    height: 3.5cm;
+    width: 1cm;
+    background-color:rgb(101, 244, 40);
+    border-radius:50px;
+    position: relative;
+    top:-4.5cm;
+    left:16.3cm;
+    
+}
+ .dancing:hover .leftleg
+{
+    animation: leftlegmove 2s infinite;
+} 
+@keyframes leftlegmove
+{
+    0%{transform: rotate(0deg);
+       transform-origin: top center;}
+    25%{transform: rotate(20deg);
+        transform-origin: top center;}
+    50%{transform: rotate(0deg);
+        transform-origin: top center;}
+    75%{transform: rotate(20deg);
+        transform-origin: top center;}
+    100%{transform: rotate(0deg);
+        transform-origin: top center;}
+} 
+.rightleg
+{
+    height: 3.5cm;
+    width: 1cm;
+    background-color:rgb(101, 244, 40);
+    border-radius:50px;
+    position: relative;
+    top:-8cm;
+    left:17.9cm;
+}
+.dancing:hover .rightleg
+{
+    animation: rightlegmove 2s infinite;
+} 
+@keyframes rightlegmove
+{
+    0%{transform: rotate(0deg);
+        transform-origin: top center;}
+    25%{transform: rotate(-20deg);
+        transform-origin: top center;}
+    50%{transform: rotate(0deg);
+        transform-origin: top center;}
+    75%{transform: rotate(-20deg);
+        transform-origin: top center;}
+    100%{transform: rotate(0deg);
+        transform-origin: top center;}
+}
